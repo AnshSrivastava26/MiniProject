@@ -31,6 +31,7 @@ This project includes student and educator interfaces with features like course 
 - **React YouTube**
 - **RC Progress**
 - **Humanize Duration**
+- **Uniqid**
 
 ---
 
@@ -112,15 +113,17 @@ npm install react-router-dom @clerk/clerk-react humanize-duration uniqid quill r
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Team / Collaborators
 
-**Ansh Srivastava**
-
-GitHub: [AnshSrivastava26](https://github.com/AnshSrivastava26)
+- **Ansh Srivastava** — [GitHub](https://github.com/AnshSrivastava26)
+- **Sahil Yadav** — [GitHub](https://github.com/Sahilyadavcs23)
+- **Nishant Chauhan** — [GitHub](https://github.com/NishantChauhan11)
+- **Rajneesh Gupta** — [GitHub](https://github.com/RajneeshGupta09)
+- **Priyanshu** — [GitHub](https://github.com/priyanshuv-code)
 
 ---
 
 ## 📌 Note
 
-This is the **frontend part only** of the LMS project.
+This is the **frontend part only** of the LMS project.  
 Backend and database integration can be added separately.
