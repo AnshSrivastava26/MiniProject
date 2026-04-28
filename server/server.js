@@ -10,9 +10,25 @@ import userRouter from "./routes/userRoutes.js";
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://mini-project-rho-lovat.vercel.app",
+  ...(process.env.CLIENT_URL ? process.env.CLIENT_URL.split(",") : []),
+].map((origin) => origin.trim().replace(/\/$/, ""));
 
 await connectDB();
-app.use(cors({ origin: process.env.CLIENT_URL || "*" }));
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin.replace(/\/$/, ""))) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: "10mb" }));
 
 app.get("/", (req, res) => {

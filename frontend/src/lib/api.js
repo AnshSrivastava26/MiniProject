@@ -1,5 +1,6 @@
 export const API_BASE_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000";
+  process.env.REACT_APP_API_URL ||
+  "https://miniproject-yb9j.onrender.com";
 
 export const apiRequest = async (path, options = {}) => {
   const response = await fetch(`${API_BASE_URL}${path}`, {
