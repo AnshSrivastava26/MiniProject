@@ -4,7 +4,7 @@
 
 -> 2 Dashboards  
    |-> **Student Dashboard**  
-       - Enroll in courses  
+       - Enroll in courses 
        - Watch course videos (with play/pause controls using `react-youtube`)  
        - Access **My Enrolled Courses** section  
        - View demo/free videos before purchase  
